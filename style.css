@@ -1,8 +1,40 @@
+
+.topnav {
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftTopNav, .rightTopNav {
+	display: inline-block;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.leftTopNav {
+	width: 5%;
+
+}
+
+.leftTopNav button, .rightTopNav button {
+	border: none;
+	background: none
+}
+
+
+
+
+
+
+/*
 .leftTopNav {
 	display: inline-block;
 	padding: 10px;
 	border: 1px solid black;
-
+	
 }
 
 .leftTopNav button {
@@ -19,12 +51,12 @@
 .rightTopNav button {
 	border: none;
 	background: none;
-
-
-}
+	position: relative;
+	top: -9.5px;
+} */
 
 .apps {
-
+	padding: 8px;
 }
 
 .container {
@@ -45,19 +77,29 @@
 	position: relative;
 	top: 25px;
 	/* border: 1px solid black; */
-	border-color: grey;
+
+
 	
 }
 
-#query {
-
+#form {
+	border: 1px solid black;
+	border-radius: 25px;
+	opacity: 0.2;
 	width: 580px;
 	height: 45px;
-	border-radius: 25px;
+	display: flex;
+	align-items: center;
+}
+
+#form img {
+	margin-left: 10px;
+}
+
+#query {
+	width: 85%;
+	border: none;
 	outline: none; 	/*removes square outline */
-	background-image: url('images/outline_search_black_24dp.png');
-	background-repeat: no-repeat;
-	background-position: left center;
 	padding-left: 30px;
 	font-size: 16px; 
 }
@@ -66,15 +108,17 @@
 .searchbutton {
 	position: relative;
 	top: 50px;
-	display: flex;
-	justify-content: space-evenly;
+	/* display: flex; */
+	/* justify-content: space-evenly; */
 	/* border: 1px solid black; */
+	text-align: center;
 
 }
 
 .searchbutton button {
 	font-size: 15px;
 	padding: 10px;
+	margin-left: 3px;
 }
 
 	
